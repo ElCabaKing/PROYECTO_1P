@@ -17,14 +17,12 @@ export async function test() {
 }
 
 export async function insert(params) {
-    console.log('l')
     const res = await api.post("/test",{nombre: params});
     console.log(res);
     return res;
 }
 
 export async function deleteList(params) {
-    console.log(params)
     const res = await api.del('/test',{id: params});
     return res;
 }
