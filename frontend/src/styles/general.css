@@ -41,10 +41,11 @@
 
 
   --component-bg: var(--primary);
-  --component-bg-hover: #9757ff; /* ligero más claro que --primary */
-  --component-bg-active: #5b21b6; /* versión más oscura para estado activo */
-  --component-text: #FFFFFF; /* texto claro sobre componentes de color */
+  --component-bg-hover: #9757ff; 
+  --component-bg-active: #5b21b6; 
+  --component-text: #FFFFFF; 
   --component-border: rgba(0,0,0,0.12);
+  --component-alert-color: #d11717;
 
   /* Variante de componentes secundarios (por ejemplo botones secundarios)
      - puedes usar estas para distinguir acciones principales/secundarias */
@@ -68,5 +69,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: var(--font-family-primary);
 }
 

@@ -1,0 +1,16 @@
+@import url('../../styles/general.css');
+img{
+    width: 150px;
+}
+
+.imgContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pDirect{
+    cursor: pointer;
+    color: var(--component-alert-color);
+}

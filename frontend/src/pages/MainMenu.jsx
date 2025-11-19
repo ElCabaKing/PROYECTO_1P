@@ -1,12 +1,16 @@
 import Card from "../components/Card/Card";
-
+import { useState, useEffect } from "react";
 
 function MainMenu(){
-    const permisos = JSON.parse(atob(localStorage.getItem("menuList")));
-
+    const [menuItem, setMenuItem] = useState([])
+    useEffect(() => {
+      const data = JSON.parse(atob(localStorage.getItem("menuList")));
+        setMenuItem(data)
+    }, [])
+    
     return(
         <div>
-            {permisos.map((item) => (<Card menu_label={item.menu_label} menu_path={item.menu_path} />))}
+            {menuItem.map((item) => (<Card key={item.menu_label} menu_label={item.menu_label} menu_path={item.menu_path} />))}
         </div>
     )
 }
