@@ -6,4 +6,9 @@
     width: 100%;
     height: 35px;
     margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.cmpInput:focus{
+    background-color: var(--component-bg-active-soft);
 }

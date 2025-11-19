@@ -55,16 +55,12 @@
   --component-secondary-text: #FFFFFF;
 }
 
-
-
 .container {
-    width: 320px;
     padding: 20px;
     background: var(--container-color);
     border-radius: 12px;
     box-shadow: var(--shadow-1);
     display: flex;
-    flex-direction: column;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -72,3 +68,15 @@
     font-family: var(--font-family-primary);
 }
 
+
+.container--row{
+    flex-direction: row;
+}
+
+.container--column {
+  flex-direction: column;
+}
+
+.container--big{
+      width: 600px;
+}

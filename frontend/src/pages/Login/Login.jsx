@@ -1,7 +1,8 @@
 import { useState } from "react"
 import useLogin from "../../hooks/useLogin";
-import logo from "../../media/icon.png"
-import "../Login/Login.css"
+import icon from "../../media/icon.png"
+import logo from "../../media/Logo.png"
+import styles from "../Login/Login.module.css"
 import Input from "../../components/Input/Input";
 function Login() {
     const { hkValidateLogin, hkmLogin, hkbLogin, hkRedirectRecovery } = useLogin()
@@ -9,10 +10,11 @@ function Login() {
     const [user_password, setUser_password] = useState('');
 
     return (
-        <div className="container">
-            <div className="imgContainer">
-                <p>Reparacion Carlitos</p>
-                <img src={logo}></img>
+        <div className="container container--row container--big">
+        <div className={styles.content}>
+            <div className={styles.imgContainer}>
+                <p>Reparaciones Juan</p>
+                <img alt="logo" src={logo}></img>
             </div>
             {hkbLogin && (<p>{hkmLogin}</p>)}
             <Input
@@ -31,6 +33,10 @@ function Login() {
             />
             <p className="pDirect" onClick={() => hkRedirectRecovery()}>Has olvidado tu contrasena?</p>
             <button onClick={() => hkValidateLogin({ user_nombre: user_nombre, user_password: user_password })}>Login</button>
+        </div>
+        <div className={styles.imgContainer}>
+            <img src={icon}></img>
+        </div>
         </div>
     )
 }

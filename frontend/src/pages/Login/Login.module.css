@@ -4,6 +4,7 @@ img{
 }
 
 .imgContainer{
+    width: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,4 +14,9 @@ img{
 .pDirect{
     cursor: pointer;
     color: var(--component-alert-color);
+}
+
+
+.content{
+    width: 300px;
 }

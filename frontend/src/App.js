@@ -4,7 +4,6 @@ import Principal from "./pages/Principal";
 import Login from "./pages/Login/Login";
 import Home from "./pages/Home"
 import MainMenu from "./pages/MainMenu";
-import Input from "./components/Input/Input";
 
 function App() {
   return (
