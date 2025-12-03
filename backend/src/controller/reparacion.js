@@ -1,8 +1,10 @@
 import reparacionModel from '../model/reparacion.js'
 
+const es_admin = (req,res) => { return req.session.administrador == true; }
+
 const estado = async (req,res) => {
   console.log('Estado de la reparacion No.' + req.body.id);
-    try {
+  try {
     const data = await reparacionModel.estado(req.body);
     res.json(data);
   }
@@ -12,8 +14,10 @@ const estado = async (req,res) => {
 }
 
 const crear = async(req,res) => {
+  if (!es_admin(req,res)) { res.redirect('/');return; }
   console.log('Crear pedido de raparacion')
-  try{
+  if (!es_admin(req)) 
+  try {
     const data = await reparacionModel.crear(req.body)
     res.json({result: true})
   }
@@ -23,8 +27,9 @@ const crear = async(req,res) => {
 }
 
 const actualizar = async(req,res) => {
+  if (!es_admin(req,res)) { res.redirect('/');return; }
   console.log('Modificado estado de la reparacion')
-  try{
+  try {
     const data = await reparacionModel.actualizar(req.body)
     res.json({result: true})
   }
@@ -34,8 +39,9 @@ const actualizar = async(req,res) => {
 }
 
 const listar = async(req,res) => {
+  if (!es_admin(req,res)) { res.redirect('/');return; }
   console.log('Listar reparaciones')
-  try{
+  try {
     const data = await reparacionModel.listar()
     res.json({result: true})
   }
