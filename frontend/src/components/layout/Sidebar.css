@@ -1,0 +1,18 @@
+.sidebar-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.sidebar-item {
+  transition: 0.25s ease;
+  border-radius: 8px;
+  margin: 4px 8px;
+}
+
+.sidebar-item:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateX(4px);
+}

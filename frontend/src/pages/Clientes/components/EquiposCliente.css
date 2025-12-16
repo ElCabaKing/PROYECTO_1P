@@ -1,0 +1,152 @@
+.equipos-container {
+  padding: 20px;
+  animation: fadeIn .3s ease-in-out;
+}
+
+/* Tarjeta del cliente */
+.cliente-card {
+  background: white;
+  padding: 18px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  margin-bottom: 25px;
+}
+
+.avatar {
+  background: #4e73df;
+  color: white;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cliente-nombre {
+  margin: 0;
+  font-size: 22px;
+}
+
+.cliente-info {
+  margin: 0;
+  color: gray;
+}
+
+/* Encabezado */
+.equipos-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Botón agregar */
+.btn-agregar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #1cc88a;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-agregar:hover {
+  background: #17a673;
+}
+
+/* Lista de equipos */
+.equipos-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 15px;
+}
+
+.no-equipos {
+  font-size: 16px;
+  color: gray;
+}
+
+.equipo-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.equipo-icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.equipo-info h3 {
+  margin: 0;
+}
+
+/* MODAL */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  width: 350px;
+  animation: fadeIn .2s ease-out;
+}
+
+.modal input,
+.modal select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 12px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.btn-cancelar {
+  background: gray;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-guardar {
+  background: #4e73df;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* sólo si usas clases personalizadas - no es obligatorio */
+.equipos-container {
+  padding: 18px;
+}

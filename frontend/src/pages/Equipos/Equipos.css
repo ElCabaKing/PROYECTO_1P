@@ -1,0 +1,62 @@
+.equipos-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.equipos-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  gap: 16px;
+}
+
+.equipos-header-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.equipos-card {
+  padding: 16px;
+  box-sizing: border-box;
+  margin-top: 12px;
+  background: rgba(255,255,255,0.85);
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.cliente-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgba(250,250,250,0.9), rgba(245,245,245,0.9));
+}
+
+.equipos-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0;
+}
+
+.search-icon {
+  color: #555;
+}
+
+.acciones-cell {
+  display: flex !important;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+}
+
+.paginacion-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}

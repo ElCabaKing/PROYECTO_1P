@@ -1,0 +1,22 @@
+
+
+
+/* Contenedor general del layout */
+.layout-container {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #0E1A2B; /* Fondo minimalista que SÍ queremos en TODA la pantalla */
+}
+
+/* Contenedor de contenido (Dashboard y otros módulos) */
+.layout-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  
+  /* Fondo nuevo claro */
+  background: linear-gradient(135deg, #7da0db, #b5bfcf);  /* O el que tú quieras */
+  min-height: 100vh;
+}
+
+

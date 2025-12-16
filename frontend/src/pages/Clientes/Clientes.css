@@ -1,0 +1,95 @@
+/* ======= LISTA DE CLIENTES ======= */
+.clientes-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.clientes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.clientes-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-icon {
+  color: #555;
+}
+
+.clientes-table {
+  width: 100%;
+  overflow-x: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+
+.MuiTableCell-root {
+  font-size: 15px;
+}
+
+.MuiTableRow-root:hover {
+  background: #f5f7fa;
+  transition: 0.2s;
+}
+
+.paginacion-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* ======= FORMULARIO ELEGANTE ======= */
+
+.clientes-form-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.clientes-form-card {
+  width: 500px;
+  padding: 35px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.clientes-form-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.clientes-form-title {
+  font-weight: bold;
+  color: #1e293b;
+}
+
+.clientes-form {
+  margin-top: 10px;
+}
+
+.btn-guardar {
+  background: #1e3a8a !important;
+  padding: 12px;
+  font-weight: bold;
+}
+
+/* Mantener acciones horizontalmente */
+.acciones-cell {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
